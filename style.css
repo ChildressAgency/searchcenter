@@ -55,3 +55,121 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body{
+  color:#000;
+  font-family:"Neue Helvetica", Helvetica, sans-serif;
+  font-weight:400;
+}
+
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.btn-main{
+  display:inline-block;
+  color:#fff;
+  padding:3px 40px;
+  background-color:#041c2b;
+  border:2px solid #041c2b;
+}
+.btn-main.btn-clear{
+  border-color:#fff;
+  background-color:transparent;
+  font-weight:300;
+}
+.btn-main.btn-clear:hover,
+.btn-main.btn-clear:focus{
+  text-decoration:none;
+  color:#041c2b;
+  background-color:#ccc;
+  border-color:#ccc;
+}
+
+.header-phone{
+  float:right;
+  padding-left:40px;
+}
+.header-phone>a{
+  color:#094e9c;
+  font-size:22px;
+  display:inline-block;
+  position:relative;
+  padding:15px;
+}
+.header-phone>a:hover,
+.header-phone>a:focus{
+  color:#041c2b;
+  text-decoration:none;
+}
+.header-phone>a:before{
+  content:"";
+  position:absolute;
+  height:40px;
+  width:40px;
+  background-image:url(images/sprites.png);
+  background-position:0 0;
+  left:-35px;
+  top:10px;
+}
+.navbar-nav>li>a{
+  color:#000;
+  font-size:24px;
+  text-transform:uppercase;
+}
+.navbar-nav>li.active>a,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus{
+  color:#094e9c;
+  background-color:transparent;
+}
+.navbar-toggle{
+  border-color:#094e9c;
+}
+.navbar-toggle .icon-bar{
+  background-color:#094e9c;
+}
+
+.hero{
+  height:500px;
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#hp-hero.hero{
+  height:710px;
+}
+#hp-hero .hero-caption{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:60px;
+  padding:0 15px;
+  text-align:center;
+}
+#hp-hero .hero-caption>h1{
+  color:#fff;
+  font-weight:700;
+}
+#hp-hero .hero-caption>.btn-main{
+  font-size:36px;
+  margin-top:10px;
+}
+
+
+@media (max-width:767px){
+  .navbar-brand{
+    height:auto;
+  }
+  .header-phone{
+    float:none;
+  }
+}
+@media (min-width:768px){
+  #navbar{
+    float:right;
+  }
+}
