@@ -60,6 +60,11 @@ body{
   color:#000;
   font-family:"Neue Helvetica", Helvetica, sans-serif;
   font-weight:400;
+  font-size:22px;
+}
+
+p{
+  line-height:1.2em;
 }
 
 a{
@@ -69,12 +74,17 @@ a{
 .btn-main{
   display:inline-block;
   color:#fff;
-  padding:3px 40px;
+  padding:10px 30px;
   background-color:#041c2b;
-  border:2px solid #041c2b;
+}
+.btn-main:hover,
+.btn-main:focus{
+  color:#041c2b;
+  background-color:#ccc;
+  text-decoration:none;
 }
 .btn-main.btn-clear{
-  border-color:#fff;
+  border:2px solid #fff;
   background-color:transparent;
   font-weight:300;
 }
@@ -84,6 +94,14 @@ a{
   color:#041c2b;
   background-color:#ccc;
   border-color:#ccc;
+}
+.btn-main.btn-alt{
+  background-color:#ccc;
+  color:#041c2b;
+}
+.btn-main.btn-alt:hover,
+.btn-main.btn-alt:focus{
+  background-color:#fff;
 }
 
 .header-phone{
@@ -157,6 +175,106 @@ a{
 #hp-hero .hero-caption>.btn-main{
   font-size:36px;
   margin-top:10px;
+  padding:3px 40px;
+}
+
+.article-title{
+  font-size:95px;
+  text-transform:uppercase;
+  color:#58595b;
+  font-weight:500;
+}
+#intro-section{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.who-we-are .btn-main{
+  margin-top:20px;
+}
+.our-promise p{
+  max-width:500px;
+}
+
+#how-it-works{
+  /*background-color:#041c2b;*/
+  background-color:rgba(4, 28, 43, .8);
+  padding-top:60px;
+  padding-bottom:60px;
+  color:#fff;
+}
+#how-it-works .article-title{
+  color:#fff;
+}
+.process-card{
+  margin-top:40px;
+}
+.process-card>header{
+  position:relative;
+}
+.process-card>header>img{
+  border:2px solid #ccc;
+}
+.process-card>header>h3{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  text-align:center;
+  font-size:36px;
+  font-weight:500;
+  padding:0 15px;
+}
+.process-card-icon{
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  background-image:url(images/sprites.png);
+}
+#search-inquiry .process-card-icon{
+  background-position:-50px 0px;
+  height:96px;
+  width:96px;
+}
+#review-plan .process-card-icon{
+  background-position:-160px 0px;
+  height:76px;
+  width:89px;
+}
+#customer-approval .process-card-icon{
+  background-position:-265px 0px;
+  height:99px;
+  width:102px;
+}
+#we-deliver .process-card-icon{
+  background-position:-380px 0px;
+  height:68px;
+  width:146px;
+}
+.process-card>p{
+  margin-top:10px;
+}
+#how-it-works .btn-main{
+  float:right;
+  margin-top:25px;
+}
+.background-element-wrapper{
+  position:relative;
+}
+.lightbulb-background{
+  position:absolute;
+  height:100%;
+  width:100%;
+  bottom:0;
+  left:0;
+  background-image:url(images/lightbulb-cord.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left bottom;
+  z-index:-1;
 }
 
 
