@@ -173,6 +173,7 @@ a{
   bottom:60px;
   padding:0 15px;
   text-align:center;
+  width:100%;
 }
 #hp-hero .hero-caption>h1{
   color:#fff;
@@ -213,6 +214,9 @@ a{
 }
 .process-card{
   margin-top:40px;
+  max-width:280px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .process-card>header{
   position:relative;
@@ -297,7 +301,7 @@ a{
   position:absolute;
   font-size:600px;
   color:#ccc;
-  right:-20px;
+  right:-0px;
   bottom:-330px;
   line-height:1em;
   z-index:1;
@@ -378,6 +382,69 @@ a{
   background-size:25%;  
 }
 
+#footer{
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#footer h3{
+  font-size:36px;
+  font-weight:500;
+  color:#464646;
+  margin-top:0;
+}
+#footer-nav>ul>li>a{
+  font-size:18px;
+  color:#464646;
+  text-transform:uppercase;
+  font-weight:500;
+}
+#footer-nav .footer-sub-nav>li>a{
+  font-size:16px;
+  color:#000;
+}
+.copyright{
+  font-size:16px;
+  text-align:center;
+  margin-top:60px;
+  padding-left:15px;
+  padding-right:15px;
+}
+.copyright a{
+  color:#000;
+}
+.copyright a:hover,
+.copyright a:focus{
+  color:#000;
+  text-decoration:underline;
+}
+.copyright span{
+  display:inline-block;
+}
+#footer .divider{
+  border-right:1px solid #7e7e7e;
+}
+#footer .social>a{
+  padding:0px 8px;
+}
+#footer .social .fab{
+  font-size:50px;
+  color:#091c2a;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+#footer .social .fab:hover,
+#footer .social .fab:focus{
+  color:#ccc;
+}
+#footer .contact-info a{
+  color:#000;
+}
+#footer .contact-info a:hover,
+#footer .contact-info a:focus{
+  color:#000;
+  text-decoration:underline;
+}
+
 @media (max-width:767px){
   .navbar-brand{
     height:auto;
@@ -385,9 +452,32 @@ a{
   .header-phone{
     float:none;
   }
+  #footer .divider{
+    border-right:none;
+  }
+  .article-title{
+    font-size:48px;
+  }
+  .testimonials-header:before{
+    left:-40px;
+  }
+  #hp-hero.hero{
+    height:75vh;
+  }
 }
 @media (min-width:768px){
   #navbar{
     float:right;
+  }
+  .container-sm-height{
+    display:table;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
+    vertical-align:top;
   }
 }
