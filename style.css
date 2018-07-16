@@ -76,6 +76,9 @@ a{
   color:#fff;
   padding:10px 30px;
   background-color:#041c2b;
+  border:none;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
 }
 .btn-main:hover,
 .btn-main:focus{
@@ -149,6 +152,9 @@ a{
 }
 .navbar-toggle .icon-bar{
   background-color:#094e9c;
+}
+.navbar-brand{
+  height:auto;
 }
 
 .hero{
@@ -277,6 +283,100 @@ a{
   z-index:-1;
 }
 
+#testimonials-mission{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.testimonials{
+  padding-top:60px;
+  padding-bottom:60px;
+  position:relative;
+}
+.testimonials:after{
+  content:close-quote;
+  position:absolute;
+  font-size:600px;
+  color:#ccc;
+  right:-20px;
+  bottom:-330px;
+  line-height:1em;
+  z-index:1;
+}
+.testimonials-header{
+  position:relative;
+  max-width:690px;
+  text-align:right;
+  margin-top:70px;
+}
+.testimonials-header:before{
+  content:open-quote;
+  position:absolute;
+  top:-204px;
+  left:-55px;
+  z-index:-1;
+  font-size:600px;
+  color:#ccc;
+  line-height:1em;
+}
+.testimonials blockquote{
+  color:#fff;
+  border:none;
+  max-width:400px;
+  position:relative;
+  z-index:2;
+  font-size:22px;
+}
+.testimonials blockquote>p{
+  font-weight:300;
+}
+.testimonials blockquote>p>strong{
+  font-weight:500;
+}
+.testimonials blockquote>footer{
+  color:#fff;
+  text-align:right;
+}
+.testimonials blockquote cite{
+  font-style:normal;
+}
+
+#contact{
+  background-color:#041c2b;
+  color:#fff;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+#contact article{
+  position:relative;
+  z-index:3;
+}
+#contact .article-title{
+  color:#fff;
+}
+.contact-form{
+  margin-top:40px;
+}
+.contact-form .form-control{
+  border-color:#ccc;
+  color:#ccc;
+  background-color:transparent;
+  border-radius:0;
+}
+.contact-form .btn-main{
+  float:right;
+}
+.mouse-background{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-image:url(images/mouse-cord.png);
+  background-repeat:no-repeat;
+  left:0;
+  bottom:0;
+  z-index:1;
+  background-position:left bottom;
+  background-size:25%;  
+}
 
 @media (max-width:767px){
   .navbar-brand{
