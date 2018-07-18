@@ -157,6 +157,15 @@ a{
   height:auto;
 }
 
+.vertical-bar{
+  position:absolute;
+  height:120px;
+  width:1px;
+  background-color:#7e7e7e;
+  bottom:-73px;
+  left:50%;
+}
+
 .hero{
   height:500px;
   position:relative;
@@ -192,6 +201,7 @@ a{
   font-weight:500;
 }
 #intro-section{
+  position:relative;
   padding-top:60px;
   padding-bottom:60px;
 }
@@ -288,6 +298,7 @@ a{
 }
 
 #testimonials-mission{
+  position:relative;
   padding-top:60px;
   padding-bottom:60px;
 }
@@ -479,5 +490,10 @@ a{
     display:table-cell;
     float:none;
     vertical-align:top;
+  }
+}
+@media (min-width:768px) and (max-width:1199px){
+  #navbar{
+    margin-top:-75px;
   }
 }
