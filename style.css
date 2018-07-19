@@ -164,6 +164,7 @@ a{
   background-color:#7e7e7e;
   bottom:-73px;
   left:50%;
+  z-index:3;
 }
 
 .hero{
@@ -175,11 +176,27 @@ a{
 #hp-hero.hero{
   height:710px;
 }
+.hero .container{
+  height:100%;
+}
+.hero .container .hero-caption{
+  height:100%;
+  display:table;
+}
+.hero .container .hero-caption>h1{
+  display:table-cell;
+  vertical-align:bottom;
+  padding-bottom:40px;
+  color:#fff;
+  font-size:95px;
+  text-transform:uppercase;
+}
 #hp-hero .hero-caption{
   position:absolute;
+  bottom:60px;
+  left:0;
   left:50%;
   transform:translateX(-50%);
-  bottom:60px;
   padding:0 15px;
   text-align:center;
   width:100%;
@@ -204,6 +221,7 @@ a{
   position:relative;
   padding-top:60px;
   padding-bottom:60px;
+  background-color:#fff;
 }
 .who-we-are .btn-main{
   margin-top:20px;
@@ -218,6 +236,8 @@ a{
   padding-top:60px;
   padding-bottom:60px;
   color:#fff;
+  z-index:2;
+  position:relative;
 }
 #how-it-works .article-title{
   color:#fff;
@@ -283,6 +303,7 @@ a{
 }
 .background-element-wrapper{
   position:relative;
+  background-color:#041c2b;
 }
 .lightbulb-background{
   position:absolute;
@@ -294,13 +315,30 @@ a{
   background-repeat:no-repeat;
   background-size:contain;
   background-position:left bottom;
-  z-index:-1;
+  z-index:1;
+}
+.lightbulb-background-2{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background-image:url(images/lightbulb-short-cord.png);
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:left center;
+  z-index:1;
 }
 
 #testimonials-mission{
   position:relative;
   padding-top:60px;
   padding-bottom:60px;
+  background-color:#fff;
+}
+#testimonials-mission article{
+  z-index:9;
+  position:relative;
 }
 .testimonials{
   padding-top:60px;
@@ -380,6 +418,23 @@ a{
 .contact-form .btn-main{
   float:right;
 }
+#get-started{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+#get-started .contact-form .form-control{
+  border-color:#58595b;
+  color:#000;
+}
+#get-started .contact-form .btn-main{
+  background-color:#041c2b;
+  color:#fff;
+}
+#get-started .contact-form .btn-main:hover,
+#get-started .contact-form .btn-main:focus{
+  background-color:#ccc;
+  color:#041c2b;
+}
 .mouse-background{
   position:absolute;
   height:100%;
@@ -391,6 +446,79 @@ a{
   z-index:1;
   background-position:left bottom;
   background-size:25%;  
+}
+
+#who-we-are{
+  padding-bottom:60px;
+  position:relative;
+  background-color:#fff;
+}
+#who-we-are article{
+  position:relative;
+  z-index:9;
+}
+#what-we-provide{
+  background-color:rgba(4, 28, 43, .8);
+  padding-top:40px;
+  padding-bottom:80px;
+  z-index:2;
+  position:relative;
+}
+#what-we-provide .article-title{
+  color:#fff;
+  text-align:center;
+}
+.provide-card{
+  margin-top:40px;
+}
+.provide-card h3{
+  font-size:30px;
+  font-weight:500;
+  color:#fff;
+}
+
+.team-member{
+  margin-top:40px;
+}
+.team-member-photo{
+  position:relative;
+  max-width:253px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.team-member-photo .img-circle{
+  position:absolute;
+  top:0;
+  padding:5px;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:248px;
+}
+.team-member-info h3{
+  font-size:30px;
+  font-weight:400;
+  margin-bottom:0;
+  margin-top:0;
+}
+.team-member-info h4{
+  font-size:30px;
+  font-weight:300;
+  margin-top:0;
+}
+.team-member-info p{
+  font-size:18px;
+}
+
+.cord-background{
+  height:170px;
+  width:100%;
+  background-image:url(images/cord.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.cord-background.alt{
+  background-image:url(images/cord-alt.png);
 }
 
 #footer{
@@ -474,6 +602,9 @@ a{
   }
   #hp-hero.hero{
     height:75vh;
+  }
+  .hero .container .hero-caption>h1{
+    font-size:60px;
   }
 }
 @media (min-width:768px){
