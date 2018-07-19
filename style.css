@@ -181,6 +181,7 @@ a{
 }
 .hero .container .hero-caption{
   height:100%;
+  width:100%;
   display:table;
 }
 .hero .container .hero-caption>h1{
@@ -406,6 +407,10 @@ a{
 #contact .article-title{
   color:#fff;
 }
+.contact-card h3{
+  font-size:22px;
+  color:#094e9c;
+}
 .contact-form{
   margin-top:40px;
 }
@@ -418,9 +423,20 @@ a{
 .contact-form .btn-main{
   float:right;
 }
+.contact-form-section{
+  margin-top:40px;
+  background-image:url(images/envelope-background.png);
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:right top;
+}
 #get-started{
   padding-top:60px;
   padding-bottom:60px;
+  position:relative;
+}
+#get-started .article-title{
+  margin-top:0;
 }
 #get-started .contact-form .form-control{
   border-color:#58595b;
@@ -519,6 +535,17 @@ a{
 }
 .cord-background.alt{
   background-image:url(images/cord-alt.png);
+  height:125px;
+}
+
+#location-map{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.location-info{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 #footer{
