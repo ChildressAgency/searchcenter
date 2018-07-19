@@ -570,6 +570,7 @@ a{
 .cord-background.alt{
   background-image:url(images/cord-alt.png);
   height:125px;
+  background-position:center bottom;
 }
 
 #location-map{
@@ -703,6 +704,68 @@ a{
 }
 #blog .btn-main{
   margin-top:20px;
+}
+
+#results-intro{
+  position:relative;
+  padding-bottom:60px;
+}
+#results-intro .container{
+  max-width:860px;
+}
+
+#services{
+  position:relative;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.service{
+  margin-top:40px;
+}
+.service-title{
+  font-size:36px;
+  color:#094e9c;
+  position:relative;
+}
+.service-title::before{
+  content:"";
+  position:absolute;
+  background-image:url(images/sprites.png);
+  background-repeat:no-repeat;
+  left:0;
+  bottom:0;
+}
+#search-inquiry.service-title{
+  padding-left:70px;
+}
+#search-inquiry.service-title:before{
+  background-position:0px -292px;
+  height:54px;
+  width:54px;
+}
+#review-plan.service-title{
+  padding-left:80px;
+}
+#review-plan.service-title:before{
+  background-position:-64px -293px;
+  height:52px;
+  width:61px;
+}
+#customer-approval.service-title{
+  padding-left:80px;
+}
+#customer-approval.service-title:before{
+  background-position:-138px -289px;
+  height:60px;
+  width:62px;
+}
+#we-deliver.service-title{
+  padding-left:115px;
+}
+#we-deliver.service-title:before{
+  background-position:-210px -296px;
+  height:46px;
+  width:98px;
 }
 
 
