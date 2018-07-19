@@ -270,9 +270,13 @@ a{
 }
 .process-card>header{
   position:relative;
-}
-.process-card>header>img{
   border:2px solid #ccc;
+  height:300px;
+  width:265px;
+  margin-left:auto;
+  margin-right:auto;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 .process-card>header>h3{
   position:absolute;
@@ -283,6 +287,7 @@ a{
   font-size:36px;
   font-weight:500;
   padding:0 15px;
+  z-index:2;
 }
 .process-card-icon{
   position:absolute;
@@ -293,6 +298,7 @@ a{
   margin-left:auto;
   margin-right:auto;
   background-image:url(images/sprites.png);
+  z-index:2;
 }
 #search-inquiry .process-card-icon{
   background-position:-50px 0px;
@@ -313,6 +319,15 @@ a{
   background-position:-380px 0px;
   height:68px;
   width:146px;
+}
+.process-card .overlay{
+  position:absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:1;
+  background-color:rgba(0,0,0,.6);
 }
 .process-card>p{
   margin-top:10px;
