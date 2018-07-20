@@ -4,40 +4,22 @@
         <div class="col-sm-6 col-sm-height divider">
           <h3>Browse Our Site</h3>
           <nav id="footer-nav">
-            <ul class="list-unstyled list-inline">
-              <li>
-                <a href="#">About</a>
-                <ul class="list-unstyled footer-sub-nav">
-                  <li><a href="#">Staff</a></li>
-                  <li><a href="#">Our Mission</a></li>
-                  <li><a href="#">Careers</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Services</a>
-                <ul class="list-unstyled footer-sub-nav">
-                  <li><a href="#">IP Services</a></li>
-                  <li><a href="#">Patent</a></li>
-                  <li><a href="#">Trademark</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Resources</a>
-                <ul class="list-unstyled footer-sub-nav">
-                  <li><a href="#">Articles</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">White Paper</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-                <ul class="list-unstyled footer-sub-nav">
-                  <li><a href="#">Our Location</a></li>
-                  <li><a href="#">Existing Customers</a></li>
-                  <li><a href="#">New Customers</a></li>
-                </ul>
-              </li>
-            </ul>
+            <?php
+              $footer_nav_args = array(
+                'theme_location' => 'footer-nav',
+                'menu' => '',
+                'container' => '',
+                'container_id' => '',
+                'container_class' => '',
+                'menu_class' => 'list-unstyled list-inline',
+                'menu_id' => '',
+                'echo' => true,
+                'fallback_cb' => 'searchcenter_footer_fallback_menu',
+                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                'depth' => 2
+              );
+              wp_nav_menu($header_nav_args);
+            ?>
           </nav>
         </div>
         <div class="col-sm-6 col-sm-height">

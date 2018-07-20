@@ -272,6 +272,17 @@ function searchcenter_header_fallback_menu(){ ?>
 
 <?php }
 
+function searchcenter_footer_fallback_menu(){ ?>
+
+  <ul class="list-unstyled list-inline">
+    <li><a href="<?php echo home_url('about'); ?>">About</a></li>
+    <li><a href="<?php echo home_url('services'); ?>">Services</a></li>
+    <li><a href="<?php echo home_url('resources'); ?>">Resources</a></li>
+    <li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+  </ul>
+
+<?php }
+
 if(function_exists('acf_add_options_page')){
   acf_add_options_page(array(
     'page_title' => 'General Settings',
