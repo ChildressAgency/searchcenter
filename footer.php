@@ -23,7 +23,7 @@
           </nav>
         </div>
         <div class="col-sm-6 col-sm-height">
-          <h3>Search-Center</h3>
+          <h3><?php the_field('company_name', 'option'); ?></h3>
           <div class="row">
             <div class="col-lg-6">
               <div class="contact-info">
@@ -48,7 +48,7 @@
       </div>
     </div>
     <p class="copyright">
-      <span>&copy; Search-Center <?php echo date('Y'); ?></span>&nbsp;|&nbsp;
+      <span>&copy; <?php the_field('company_name', 'option'); ?> <?php echo date('Y'); ?></span>&nbsp;|&nbsp;
       <span>Website created by the <a href="https://childressagency.com" target="_blank">Childress Agency</a></span>
     </p>
   </footer>
