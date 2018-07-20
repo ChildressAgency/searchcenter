@@ -243,6 +243,10 @@ a{
   padding-bottom:60px;
   background-color:#fff;
 }
+#intro-section article{
+  position:relative;
+  z-index:3;
+}
 .who-we-are .btn-main{
   margin-top:20px;
 }
