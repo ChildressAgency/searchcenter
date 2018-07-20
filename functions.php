@@ -292,3 +292,96 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+add_action('init', 'searchcenter_create_post_types');
+function searchcenter_create_post_types(){
+  $articles_labels = array(
+    'name' => 'Articles',
+    'singular_name' => 'Article',
+    'menu_name' => 'Articles',
+    'add_new_item' => 'Add New Article',
+    'search_items' => 'Search Articles',
+    'edit_item' => 'Edit Article',
+    'view_item' => 'View Article',
+    'all_items' => 'All Articles',
+    'new_item' => 'New Article',
+    'not_found' => 'No Articles Found'
+  );
+  $articles_args = array(
+    'labels' => $articles_labels,
+    'capability_type' => 'post',
+    'public' => true,
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-media-text',
+    'query_var' => 'article',
+    'supports' => array(
+      'title',
+      'editor',
+      'custom_fields',
+      'author',
+      'thumbnail',
+      'revisions'
+    )
+  );
+  register_post_type('article', $articles_args);
+
+  $webinars_labels = array(
+    'name' => 'Webinars',
+    'singular_name' => 'Webinar',
+    'menu_name' => 'Webinars',
+    'add_new_item' => 'New Webinar',
+    'search_items' => 'Search Webinars',
+    'edit_item' => 'Edit Webinar',
+    'view_item' => 'View Webinar',
+    'all_items' => 'All Webinars',
+    'new_item'=> 'New Webinar',
+    'not_found' => 'No Webinars Found'
+  );
+  $webinars_args = array(
+    'labels' => $webinars_labels,
+    'capability_type' => 'post',
+    'public' => true,
+    'menu_position' => 6,
+    'menu_icon' => 'dashicons-format-video',
+    'query_var' => 'webinar',
+    'supports' => array(
+      'title',
+      'editor',
+      'custom_fields',
+      'author',
+      'thumbnail',
+      'revisions'
+    )
+  );
+  register_post_type('webinar', $webinars_args);
+
+  $whitepapers_labels = array(
+    'name' => 'White Papers',
+    'singular_name' => 'White Paper',
+    'menu_name' => 'White Papers',
+    'add_new_item' => 'Add White Paper',
+    'search_items' => 'Search White Papers',
+    'edit_item' => 'Edit White Paper',
+    'view_item' => 'View White Paper',
+    'all_items' => 'All White Papers',
+    'new_item' => 'New White Paper',
+    'not_found' => 'No White Papers Found'
+  );
+  $whitepapers_args = array(
+    'labels' => $whitepapers_labels,
+    'capability_type' => 'post',
+    'public' => true,
+    'menu_position' => 7,
+    'menu_icon' => 'dashicons-media-document',
+    'query_var' => 'whitepaper',
+    'supports' => array(
+      'title',
+      'editor',
+      'custom_fields',
+      'author',
+      'thumbnail',
+      'revisions'
+    )
+  );
+  register_post_type('whitepaper', $whitepapers_args);
+}
