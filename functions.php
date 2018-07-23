@@ -52,6 +52,7 @@ function searchcenter_styles(){
 add_theme_support('post-thumbnails');
 
 register_nav_menu( 'header-nav', 'Header Navigation' );
+register_nav_menu('footer-nav', 'Footer Navigation');
 /**
  * Class Name: wp_bootstrap_navwalker
  * GitHub URI: https://github.com/twittem/wp-bootstrap-navwalker
