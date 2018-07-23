@@ -72,6 +72,7 @@
         $hero_link = get_field('hero_link');
         if($hero_link): ?>
           <a href="<?php echo $hero_link['url']; ?>" class="btn-main btn-clear"><?php echo $hero_link['title']; ?></a>
+      <?php endif; ?>
     </div>
     <span class="vertical-bar"></span>
   </div>
@@ -87,7 +88,14 @@
     }
 
     $hero_title = get_the_title();
-    if(get_field('hero_title')){
+    $queried_object = get_queried_object();
+    
+    if(is_archive()){
+      //var_dump($queried_object);
+      $hero_title = $queried_object->labels->name;
+    }elseif(is_singular() && !is_page()){
+      $hero_title = $queried_object->post_type;
+    }elseif(get_field('hero_title')){
       $hero_title = get_field('hero_title');
     } ?>
 

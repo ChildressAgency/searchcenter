@@ -122,7 +122,7 @@
               </div>
             </div>
           <?php endwhile; ?>
-          <a href="<?php echo get_post_type_archive_link('whitepaper'); ?>" class="btn-main non-btn-alt">View All</a>
+          <a href="<?php echo get_post_type_archive_link('post'); ?>" class="btn-main non-btn-alt">View All</a>
         </div>
       </div>
   <?php endif; wp_reset_postdata(); ?>

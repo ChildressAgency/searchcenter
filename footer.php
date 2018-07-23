@@ -18,7 +18,7 @@
                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                 'depth' => 2
               );
-              wp_nav_menu($header_nav_args);
+              wp_nav_menu($footer_nav_args);
             ?>
           </nav>
         </div>
@@ -52,6 +52,7 @@
       <span>Website created by the <a href="https://childressagency.com" target="_blank">Childress Agency</a></span>
     </p>
   </footer>
+  <?php wp_footer(); ?>
 </body>
 
 </html>

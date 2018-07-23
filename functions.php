@@ -314,6 +314,7 @@ function searchcenter_create_post_types(){
     'menu_position' => 5,
     'menu_icon' => 'dashicons-media-text',
     'query_var' => 'article',
+    'has_archive' => true,
     'supports' => array(
       'title',
       'editor',
@@ -344,6 +345,7 @@ function searchcenter_create_post_types(){
     'menu_position' => 6,
     'menu_icon' => 'dashicons-format-video',
     'query_var' => 'webinar',
+    'has_archive' => true,
     'supports' => array(
       'title',
       'editor',
@@ -374,6 +376,7 @@ function searchcenter_create_post_types(){
     'menu_position' => 7,
     'menu_icon' => 'dashicons-media-document',
     'query_var' => 'whitepaper',
+    'has_archive' => true,
     'supports' => array(
       'title',
       'editor',
