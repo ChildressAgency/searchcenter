@@ -10,7 +10,7 @@
   <meta http-equiv="cache-control" content="public">
   <meta http-equiv="cache-control" content="private">
 
-  <title>Search Center</title>
+  <title>Patent Searching</title>
 
   <?php wp_head(); ?>
 
