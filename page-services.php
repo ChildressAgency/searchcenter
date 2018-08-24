@@ -11,7 +11,7 @@
 
   <div id="services">
     <div class="container">
-      <h2 class="article-title">Search Products</h2>
+      <!--<h2 class="article-title">Search Products</h2>-->
 
       <?php if(have_rows('how_it_works_sections')): while(have_rows('how_it_works_sections')): the_row(); ?>
         <div class="row service">
