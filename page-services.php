@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php if(get_field('first_section_title') || get_field('first_section_content')): ?>
   <div id="results-intro">
     <div class="container">
       <h2 class="article-title"><?php the_field('first_section_title'); ?></h2>
@@ -6,54 +7,27 @@
     </div>
     <span class="vertical-bar"></span>
   </div>
+<?php endif; ?>
 
   <div id="services">
     <div class="container">
-      <h2 class="article-title">How it Works</h2>
+      <!--<h2 class="article-title">Search Products</h2>-->
 
-      <div class="row service">
-        <div class="col-sm-7">
-          <?php $section_1_image = get_field('how_it_works_section_1_image'); ?>
-          <img src="<?php echo $section_1_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $section_1_image['alt']; ?>" />
+      <?php if(have_rows('how_it_works_sections')): while(have_rows('how_it_works_sections')): the_row(); ?>
+        <div class="row service">
+          <div class="col-sm-7">
+            <?php $section_image = get_sub_field('section_image'); ?>
+            <img src="<?php echo $section_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $section_image['alt']; ?>" />
+          </div>
+          <div class="col-sm-5">
+            <?php if(get_sub_field('section_icon')): ?>
+              <img src="<?php the_sub_field('section_icon'); ?>" class="service-icon" alt="" />
+            <?php endif; ?>
+            <h3 class="service-title"><?php the_sub_field('section_title'); ?></h3>
+            <?php the_sub_field('section_content'); ?>
+          </div>
         </div>
-        <div class="col-sm-5">
-          <h3 id="search-inquiry" class="service-title"><?php the_field('how_it_works_section_1_title'); ?></h3>
-          <?php the_field('how_it_works_section_1_content'); ?>
-        </div>
-      </div>
-
-      <div class="row service">
-        <div class="col-sm-7">
-          <?php $section_2_image = get_field('how_it_works_section_2_image'); ?>
-          <img src="<?php echo $section_2_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $section_2_image['alt']; ?>" />
-        </div>
-        <div class="col-sm-5">
-          <h3 id="review-plan" class="service-title"><?php the_field('how_it_works_section_2_title'); ?></h3>
-          <?php the_field('how_it_works_section_2_content'); ?>
-        </div>
-      </div>
-
-      <div class="row service">
-        <div class="col-sm-7">
-          <?php $section_3_image = get_field('how_it_works_section_3_image'); ?>
-          <img src="<?php echo $section_3_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $section_3_image['alt']; ?>" />
-        </div>
-        <div class="col-sm-5">
-          <h3 id="customer-approval" class="service-title"><?php the_field('how_it_works_section_3_title'); ?></h3>
-          <?php the_field('how_it_works_section_3_content'); ?>
-        </div>
-      </div>
-
-      <div class="row service">
-        <div class="col-sm-7">
-          <?php $section_4_image = get_field('how_it_works_section_4_image'); ?>
-          <img src="<?php echo $section_4_image['url']; ?>" class="img-responsive center-block" alt="<?php echo $section_4_image['alt']; ?>" />
-        </div>
-        <div class="col-sm-5">
-          <h3 id="we-deliver" class="service-title"><?php the_field('how_it_works_section_4_title'); ?></h3>
-          <?php the_field('how_it_works_section_4_content'); ?>
-        </div>
-      </div>
+      <?php endwhile; endif; ?>
 
     </div>
   </div>

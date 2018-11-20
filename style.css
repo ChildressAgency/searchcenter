@@ -214,9 +214,10 @@ a{
 }
 #hp-hero .hero-caption{
   position:absolute;
-  bottom:60px;
+  /*bottom:60px;*/
+  top:50%;
   left:50%;
-  transform:translateX(-50%);
+  transform:translate(-50%, -50%);
   padding:0 15px;
   text-align:center;
   width:100%;
@@ -224,6 +225,7 @@ a{
 #hp-hero .hero-caption>h1{
   color:#fff;
   font-weight:700;
+  font-size:50px;
 }
 #hp-hero .hero-caption>.btn-main{
   font-size:36px;
@@ -726,11 +728,21 @@ a{
 .service{
   margin-top:40px;
 }
+.service-icon{
+  display:inline-block;
+  vertical-align:bottom;
+  margin-bottom:10px;
+  margin-right:5px;
+}
 .service-title{
   font-size:36px;
   color:#094e9c;
   position:relative;
+  display:inline-block;
+  vertical-align:bottom;
+  margin-bottom:10px;
 }
+/*
 .service-title::before{
   content:"";
   position:absolute;
@@ -738,7 +750,7 @@ a{
   background-repeat:no-repeat;
   left:0;
   bottom:0;
-}
+}*/
 #search-inquiry.service-title{
   padding-left:70px;
 }

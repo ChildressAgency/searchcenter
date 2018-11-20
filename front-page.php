@@ -79,7 +79,7 @@
               </section>
             </div>
           </div>
-          <a href="<?php echo home_url('services'); ?>" class="btn-main btn-alt">Learn More</a>
+          <!--<a href="<?php //echo home_url('services'); ?>" class="btn-main btn-alt">Learn More</a>-->
         </article>
       </div>
       <span class="vertical-bar"></span>
